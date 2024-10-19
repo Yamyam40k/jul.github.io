@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/styles.css"> 
+    <script src="https://kit.fontawesome.com/e5b75abdfa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <img src="../src/assets/icon1.png" class="logo">
+            <nav> 
+                <ul> 
+                    <li><a href ="#header">Home</a></li>
+                    <li><a href ="#bio">Bio </a></li>
+                    <li><a href ="#experience">Experience</a></li>
+                    <li><a href ="#projects">Projects</a></li>
+                    <li><a href ="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hello there! I'm <span>Jules</span> :) </h1>
+                <p>            I'm an electronics engineering student from Mapua University, Manila and I specizalized 
+            in front-end development, cybersecurity, and robotics engineering.
+                </p>
+            </div>
+        </div>   
+    </div>
+    <!-- --------------------Bio section-------------------------------- -->
+
+    <div id="bio"> 
+        <div class="container">
+            <div class="row">
+                <div class="bio-col-1">
+                    <img src="../src/assets/Juliam.png">
+                </div>
+                <div class="bio-col-2">
+                    <h1 class="bio-title">About me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error voluptatibus, corporis sed commodi magni deleniti sit. Quae repellat nisi explicabo laboriosam reprehenderit ex quas minima quod accusantium suscipit? Reiciendis, natus.</p>
+                    <div class="tab-titles">
+                        <p class ="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class ="tab-links" onclick="opentab('tools')">Tools</p>
+                        <p class ="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> <span>Robotics engineering</span><br>Circuit design, C++, Python, Advanced Mathematics, Physics</li>
+                            <li> <span>Frontend web development</span><br>HTML, CSS, JavaScript, Figma</li>
+                            <li> <span>Cybersecurity</span><br>Cisco networking device, Linux systems, Routing, Subnetting, <br>SOHO enterprise, Network Security Automation</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="tools">
+                        <ul>
+                            <li> <span>Programming tools</span><br>Visual Studio Code,Arduino IDE, Jupyter Notebook, Anaconda, Pycharm, DEV C++, MATLAB</li>
+                            <li> <span>Circuit Design tools</span><br>LTSpice, AutoCAD, FluidSIM, TINAPro</li>
+                            <li> <span>Cybersecurity tools</span><br>Linux Scripting, Windows Scripting, Cisco Devices Scripting, Wireshark</li>
+                            <li> <span>Others</span><br>MS Excel, MS Powerpoint, Google Workspace, Adobe Premier, Adobe Photoshop & Lightroom</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li> <span>Education</span><br>Mapua University - B.S. Electronics Engineering<br> St. Paul University Manila - High School (STEM)
+                            <li> <span>Cisco Networking Academy</span><br>Switching, Routing and Wireless Essentials<br>Enterprise, Network, Security, and Automation<br>Introduction to Cybersecurity, Cybersecurity essentials</li>
+                            <li> <span>Coursera - University of Michigan</span><br>Introduction to Data Science<br>Applied plotting, charting, and data representation in python</li>
+                            <li> <span>Coursera - Georgia Institue of Technology</span><br>Linear Circuits: AC & DC Analysis</li>
+                            <li> <span>Coursera - University of Colorado, Boulder</span><br>Field Effect Transistors and Bipolar Junction Transistor</li>
+                            <li> <span>Coursera - Korea Advanced Institute of Science and Technology</span><br>Electrodynamics: Introduction, Analysis of Electric Fields and Magnetic Fields</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- <------------------------------experience------------------------------------------>
+    <div id="experience">
+        <div class="container">
+            <h1 class="sub-title">Work experience</h1>
+            <div class="experience-list">
+                <div> 
+                    <i class="fa-solid fa-headset fa-2xl" style="color: #0d84df;"></i>
+                    <h2>TaskUs</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum iste at ducimus dicta ut fuga similique saepe minima hic error cupiditate sequi, eius ad quae veniam quaerat nostrum corporis reiciendis.</p>
+                </div>
+
+                <div> 
+                    <i class="fa-solid fa-wrench fa-2xl" style="color: #0d84df;"></i>
+                    <h2>Ibex Philippines</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum iste at ducimus dicta ut fuga similique saepe minima hic error cupiditate sequi, eius ad quae veniam quaerat nostrum corporis reiciendis.</p>
+                </div>
+                
+                <div> 
+                    <i class="fa-solid fa-tooth fa-2xl" style="color: #0d84df;"></i>
+                    <h2>Aestetika Dental Clinic</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum iste at ducimus dicta ut fuga similique saepe minima hic error cupiditate sequi, eius ad quae veniam quaerat nostrum corporis reiciendis.</p>
+                </div>
+
+                <div> 
+                    <i class="fa-solid fa-plus-minus fa-2xl" style="color: #0d84df;"></i>
+                    <h2>Freelance Math Specialist</h2>
+                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum iste at ducimus dicta ut fuga similique saepe minima hic error cupiditate sequi, eius ad quae veniam quaerat nostrum corporis reiciendis.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- -----------------------------------------Projects--------------------- -->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="work">
+                <img src="../src/assets/movrob.png">
+                <div class="layer">
+                    <h3> Go-to-goal Obstacle avoidance robot</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt quia sint error dolorem cupiditate nulla amet eos delectus quam eaque inventore porro, corrupti natus placeat, quos quis excepturi voluptate.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #07b2c2;"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="../src/assets/project trashbin.png">
+                <div class="layer">
+                    <h3>Touchless trashbin from 6 liter water bottlet</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt quia sint error dolorem cupiditate nulla amet eos delectus quam eaque inventore porro, corrupti natus placeat, quos quis excepturi voluptate.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #07b2c2;"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="../src/assets/pneumaticTrainer.png">
+                <div class="layer">
+                    <h3> PLC/Arduino-controlled pneumatic cylinders</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sunt quia sint error dolorem cupiditate nulla amet eos delectus quam eaque inventore porro, corrupti natus placeat, quos quis excepturi voluptate.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #07b2c2;"></i></a>
+                </div>
+            </div>   
+        </div>
+        <a href="#" class="btn">More</a>
+    </div>
+</div>
+
+<!-- -------------------------Contact--------------------------------------------------------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-regular fa-envelope" style="color: #b59b1a;"></i>     juliampiedad1428@gmail.com</p>
+                <p> <i class="fa-solid fa-phone" style="color: #b59b1a;"></i>    (+63)9945965377</p>
+                <div class="social-handles">
+                    <a href="https://ph.linkedin.com/in/juliam-piedad-7a670623b"><i class="fa-brands fa-linkedin" style="color: #0177e4;"></i></a>
+                    <a href="https://www.instagram.com/blackshirtyellowcap/"><i class="fa-brands fa-instagram" style="color: #0177e4;"></i></a>
+                    <a href="https://github.com/Yamyam40k"><i class="fa-brands fa-github" style="color: #000000;"></i></a>
+                    <a href="https://www.facebook.com/juliam.piedad.7"><i class="fa-brands fa-facebook" style="color: #005eff;"></i></a>
+                </div>
+                <a href="../src/assets/Piedad CV.pdf" class ="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name ="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder = "Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id = "msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Juliam Piedad Made with HTML, CSS, and JavaScript</p>
+    </div>
+</div>
+    <script> 
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzByHExkSH40B3y_p1FG_hdag36iS7KmRFmzBR_jqBRhRVCkeZxWe7wKSs0Iky-2MTVaw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent successfully"
+        })
+        .catch(error => console.error('Error!', error.message))
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+    })
+  </script>
+
+</body>
+</html>
+
+
+
+
